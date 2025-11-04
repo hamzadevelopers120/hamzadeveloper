@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello It's Me</h3>
+            <h1>Muhammad Hamza</h1>
+            <h3>And I'm <span class="typing"></span></h3>
+            <p>Passionate freelance Shopify developer specializing in custom e-commerce solutions. I transform ideas
+                into high-performing digital experiences that enhance business growth and customer engagement.</p>
+            <div class="social-media">
+                <a href="https://wa.me/923098686413?text=Hi%20Hamza,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+                    target="_blank">
+                    <i class='bx bxl-whatsapp'></i> </a>
+                <a href="https://web.facebook.com/hamzadeveloper120"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-hamza-389048382"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/hamzadevelopers120"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="my-cv.pdf" class="btn">Download CV</a>
+
+        </div>
+        <div class="home-image">
+            <div class="img-bg-second"></div>
+            <div class="img-bg-first"></div>
+            <div class="home-img-title">
+                <div class="home-img">
+                    <img src="hero.jpg" alt="hero-image">
+                </div>
+                <div class="home-img-data">
+                    <h3 class="himg-heading">Muhammad Hamza</h3>
+                    <p class="himg-title">Shopify Developer</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="hero.jpg" alt="about-image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span> Me </span></h2>
+            <h3>Frontend | Shopify Developer</h3>
+            <p>Hi! I’m Muhammad Hamza, a Shopify Developer with over 3 years of experience building, customizing, and
+                optimizing Shopify stores for brands around the world.</p>
+            <a href="#!" class="btn" id="readMoreBtn">Read More</a>
+        </div>
+    </section>
+    <!-- end of about section -->
+     <!-- Popup Modal -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class=" popup-heading">More <span>About Me</span></h2>
+    <p class="popup-description">
+      I’m Muhammad Hamza, a passionate Frontend & Shopify Developer with a strong focus on creating
+      high-performing, conversion-oriented, and visually appealing online stores.  
+      My expertise lies in Shopify theme development, custom Liquid coding, responsive UI/UX design, and
+      performance optimization.  
+      I’ve worked with multiple international clients and helped them build successful eCommerce businesses.
+      <br><br>
+      My goal is to provide businesses with modern, fast, and user-friendly websites that drive real results.
+    </p>
+  </div>
+</div>
+    <!-- services section -->
+    <section class="services" id="services">
+  <h2 class="heading">Our <span>Services</span></h2>
+  <div class="services-container">
+
+    <!-- ===== Service 1 ===== -->
+    <div class="services-box">
+      <ion-icon name="brush"></ion-icon>
+      <h3>Shopify Customization & Design</h3>
+      <p>Tailored designs and theme customizations that match your brand.</p>
+      <a href="#!" class="btn" data-modal="modal1">Read More</a>
+    </div>
+
+    <!-- ===== Service 2 ===== -->
+    <div class="services-box">
+      <i class="bx bxl-shopify"></i>
+      <h3>Shopify Development</h3>
+      <p>Custom Shopify theme development and store optimization services.</p>
+      <a href="#!" class="btn" data-modal="modal2">Read More</a>
+    </div>
+
+    <!-- ===== Service 3 ===== -->
+    <div class="services-box">
+      <i class="bx bx-code-alt"></i>
+      <h3>Frontend Developer</h3>
+      <p>Responsive, user-friendly layouts with modern web technologies.</p>
+      <a href="#!" class="btn" data-modal="modal3">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== POPUPS ====== -->
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="popup-heading">Shopify Customization & <span>Design</span></h2>
+    <p class="popup-description">
+      We provide tailored designs and theme customizations that perfectly match your brand identity.  
+      From layout adjustments to advanced styling, we craft unique shopping experiences that engage and convert visitors.  
+      Every detail is designed to reflect your business’s personality.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="popup-heading">Shopify <span>Development</span></h2>
+    <p class="popup-description">
+      Our Shopify Development services include:  
+      • Custom Shopify theme development  
+      • Store setup & configuration  
+      • Theme customization & redesign  
+      • Speed & performance optimization  
+      • App integration & functionality  
+      • Ongoing store maintenance & support  
+      We ensure your store runs smoothly and grows effectively.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="popup-heading">Frontend <span>Development</span></h2>
+    <p class="popup-description">
+      I create responsive, user-friendly, and visually appealing web interfaces using modern front-end technologies such as HTML, CSS, and JavaScript.  
+      My goal is to build fast, accessible, and pixel-perfect designs that deliver great user experiences across all devices.
+    </p>
+  </div>
+</div>
+    <!-- end of services section -->
+    <!-- skills section -->
+    <section class="skills section" id="skills">
+
+        <div class="skills bd-grid">
+            <div>
+                <h2 class="heading">Professional <span>Skills</span></h2>
+                <p class="skills-text">I love to think outside the box and bring unique ideas to life through design, I
+                    have proficiency in HTML, CSS, and JavaScript, that ensure that my designs are not only beautiful
+                    but also functional. I prioritize the needs and preferences of users, conducting research to
+                    understand their behaviors and preferences.</p>
+
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-html5 skills-icon'></i>
+                        <span class="skills-name">HTML5</span>
+                    </div>
+
+                    <div>
+                        <span class="skills-percentage">100%</span>
+                    </div>
+
+                    <div class="skills-bar skills-html"></div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-css3 skills-icon'></i>
+                        <span class="skills-name">CSS3</span>
+                    </div>
+
+                    <div>
+                        <span class="skills-percentage">95%</span>
+                    </div>
+
+                    <div class="skills-bar skills-css"></div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-javascript skills-icon'></i>
+                        <span class="skills-name">JAVASCRIPT</span>
+                    </div>
+
+                    <div>
+                        <span class="skills-percentage">85%</span>
+                    </div>
+
+                    <div class="skills-bar skills-js"></div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxs-paint skills-icon'></i>
+                        <span class="skills-name">BootStrap</span>
+                    </div>
+
+                    <div>
+                        <span class="skills-percentage">90%</span>
+                    </div>
+
+                    <div class="skills-bar skills-ux"></div>
+                </div>
+            </div>
+
+            <div class="skill-image">
+                <img src="pro1.png" alt="image" class="skills-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- end skills section -->
+
+
+
+
+
+
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio">
+        <h4 class="heading">Portfolio</h4>
+        <p>Showcasing my latest projects and achievements in web development and e-commerce </p>
+        <h2 class="headerh">Recent <span>Project</span> </h2>
+        <div class="recet-project">
+            <div class="project-box left">
+                <div class="image-project">
+                    <img src="shopify4.avif" alt="">
+                </div>
+                <div class="recent-pro-data">
+                    <h3>Zenmed </h3>
+                    <p class="project-description"> Custom Shopify theme Based Watched and Iphone Cases Store.</p>
+                    <a href="https://zenmed.com/" class="project-icon">
+                        <p>View Store</p><span><i class='bx bx-link-external'></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-box right">
+                <div class="image-project">
+                    <img src="shopify3.jpg" alt="">
+                </div>
+                <div class="recent-pro-data">
+                    <h3>Hydrophonic </h3>
+                    <p class="project-description"> Custom Shopify theme for a women's clothing store.</p>
+                    <a href="https://agradehydroponics.com/" class="project-icon">
+                        <p>View Store</p><span><i class='bx bx-link-external'></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 class="headerh">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="mockup-free-QiwtEdE0gag-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <a href="https://www.sokimnewyork.com/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <a href="https://brikzz.com/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="freestocks-_3Q3tsJ01nc-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <a href="https://jatanele.com/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="jay-wennington-79tCHeX1UGc-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <a href="https://bandkult.de/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="premium_photo-1695042864936-b28290dd54b4.avif" alt="">
+                <div class="portfolio-layer">
+                    <a href="https://mikksdrinks.com/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="joshua-rawson-harris-YNaSz-E7Qss-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <a href="https://www.sokimnewyork.com/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of portfolio section  -->
+
+    <!-- timeline section -->
+    <section class="timeline-section" id="timeline">
+        <h2 class="heading">My <span> Journey</span></h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>2022 - Start</h3>
+                    <p>Began learning web development with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>2023 - Shopify Development</h3>
+                    <p>Started working professionally on Shopify stores and Liquid code.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>2024 - Freelancing</h3>
+                    <p>Worked with international clients on custom Shopify themes and bug fixing.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>2025 - Present</h3>
+                    <p>Building full-featured Shopify stores with custom sections and advanced features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of timeline section -->
+    <!-- pricing section -->
+    <!-- <section class="pricing" id="pricing">
+        <h2 class="heading">Pricing <span> Plans</span></h2>
+        <p class="pricing-title">Choose the perfect plan for your project needs </p>
+        <div class="pricing-container">
+            <div class="pricing-box left">
+                <h3 class="pricing-title">Basic</h3>
+                <h4 class="pricing-price">$100</h4>
+                <p class="pricing-retal">Perfect for small projects</p>
+                <ul class="pricing-features">
+                    <li><i class='bx bx-check'></i>Custom Shopify Theme</li>
+                    <li><i class='bx bx-check'></i>Basic SEO Setup</li>
+                    <li><i class='bx bx-check'></i>Up to 10 Products</li>
+                    <li><i class='bx bx-check'></i>Email Support</li>
+                    <li><i class='bx bx-check'></i>1 Revision</li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="pricing-box center">
+                <h3 class="pricing-title">Standard</h3>
+                <h4 class="pricing-price">$250</h4>
+                <p class="pricing-retal">Ideal for growing businesses</p>
+                <ul class="pricing-features">
+                    <li><i class='bx bx-check'></i>Custom Shopify Theme</li>
+                    <li><i class='bx bx-check'></i>Advanced SEO Setup</li>
+                    <li><i class='bx bx-check'></i>Up to 50 Products</li>
+                    <li><i class='bx bx-check'></i>Email & Chat Support</li>
+                    <li><i class='bx bx-check'></i>3 Revisions</li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+            <div class="pricing-box right">
+                <h3 class="pricing-title">Premium</h3>
+                <h4 class="pricing-price">$500</h4>
+                <p class="pricing-retal">Best for large enterprises</p>
+                <ul class="pricing-features">
+                    <li><i class='bx bx-check'></i>Custom Shopify Theme</li>
+                    <li><i class='bx bx-check'></i>Advanced SEO Setup</li>
+                    <li><i class='bx bx-check'></i>Up to 100 Products</li>
+                    <li><i class='bx bx-check'></i>Email & Chat Support</li>
+                    <li><i class='bx bx-check'></i>Unlimited Revisions</li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- End pricing section -->
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="from_name" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="reply_to" placeholder="Email Address" required>
+            </div>
+
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <!-- end of contact section -->
+
+
+    <!-- footer design -->
+
+    <!-- <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2023 by the codehal | All rights reserved!
+            </p> 
+        </div>
+        <div class="footer-icontop">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+     </footer> -->
+    <footer>
+        <div class="footer-container section">
+            <!-- Column 1 -->
+            <div class="footer-about">
+                <h3 class="footer-logo">About <span>Me</span></h3>
+                <p>I’m a Shopify Developer with 3+ years of experience in building custom stores, fixing bugs, and
+                    creating high-converting eCommerce websites.</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-links">
+                <h3 class="footer-logo">Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-contact">
+                <h3 class="footer-logo">Contact</h3>
+                <p>Email: <a href="mailto:hamzagenius120@gmail.com" class="mails">hamzagenius120@gmail.com</a></p>
+                <p>Location: Pakistan</p>
+                <div class="social-media">
+                    <a href="https://wa.me/923098686413?text=Hi%20Hamza,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+                    target="_blank">
+                    <i class='bx bxl-whatsapp'></i> </a>
+                <a href="https://web.facebook.com/hamzadeveloper120"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-hamza-389048382"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/hamzadevelopers120"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Muhammad Hamza | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end footer desgin -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
